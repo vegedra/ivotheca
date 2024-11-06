@@ -1,0 +1,313 @@
+/* Body and Layout */
+body {
+    background-image: url(assets/space.gif);
+    color: #000;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    cursor: url("assets/cursor.png"), auto;
+}
+
+h1 {
+    color: #f9fbfc;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+h2, h3 {
+    color: #03315e;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #011f4b;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin: 0.2em 0;
+}
+
+.tagline {
+    font-size: 1em;
+    font-style: italic;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 1em;
+}
+
+.nav-links a {
+    color: #f0c75e; /* Cor do texto dos links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse sobre os links */
+}
+
+/* Retro Marquee */
+marquee {
+    font-size: 0.9em;
+    color: #ffcc00;
+    background-color: #333;
+}
+
+/* Links Section */
+.links {
+    background-color: #fff;
+    text-align: center;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 1em;
+    border: 2px solid #003366;
+}
+
+.links h2 {
+    margin-bottom: 1em;
+}
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+/* Post Content */
+.post-content {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 1em;
+    border: 2px solid #003366;
+}
+
+/* Footer */
+footer {
+    background-color: #011f4b;
+    color: #ffcc00;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 3px solid #ffcc00;
+}
+
+/* Recent Posts Section */
+.recent-posts {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 1em;
+    border: 2px solid #003366;
+    border-radius: 5px;
+    color: #333;
+}
+
+.recent-posts h2 {
+    color: #03315e;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.recent-posts .post {
+    background-color: #f5f5f5;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-left: 4px solid #003366;
+    border-radius: 3px;
+}
+
+.recent-posts .post h3 {
+    font-size: 1.2em;
+    color: #003366;
+    margin: 0.5em 0;
+}
+
+.recent-posts .post p {
+    font-size: 0.95em;
+    color: #555;
+    margin: 0.5em 0;
+}
+
+.recent-posts .post .read-more {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.recent-posts .post .read-more:hover {
+    color: #ffcc00;
+}
+
+/* Estilo para o link de tradução */
+.google-translate-button {
+    background-color: #333;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    padding: 0.5em;
+    font-family: "Courier New", monospace;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block; 
+}
+
+/* Centralizar o botão de tradução (se necessário, adicione essa classe ao seu container) */
+.google-translate-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+/* Dark Mode button aligned next to the Google Translate */
+.dark-mode-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/* Dark Mode Button Styles */
+.dark-mode-button {
+    background-color: #333;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    padding: 0.5em;
+    cursor: pointer;
+    font-family: "Courier New", monospace;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ccc;
+}
+
+body.dark-mode .hero {
+    background-color: #222;
+    border-bottom-color: #ff9933;
+}
+
+body.dark-mode .recent-posts, body.dark-mode .post-content {
+    background-color: #333;
+    color: #eee;
+    border-color: #ff9933;
+}
+
+body.dark-mode .links {
+    background-color: #333;
+    color: #eee;
+    border-color: #ff9933;
+}
+
+body.dark-mode .read-more {
+    color: #ff9933;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+    color: #ff9933;
+    border-top-color: #ff9933;
+}
+
+body.dark-mode .dark-mode-button {
+    background-color: #ff9933;
+    color: #222;
+    border-color: #ffcc00;
+}
+
+body.dark-mode h2, h3 {
+    color: #f0c75e;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+
+/* Dark Mode Styles for Links */
+body.dark-mode .nav-links a {
+    color: #f0c75e; /* Light yellow, or another color of your choice */
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #ff9933; /* A brighter color on hover */
+    text-decoration: underline;
+}
+
+body.dark-mode .links a {
+    color: #ff9933; /* Light yellow or any color that fits dark mode */
+}
+
+body.dark-mode .links a:hover {
+    color: #ff9933; /* A brighter color on hover */
+    text-decoration: underline;
+}
+
+
+/* Dark Mode Adjustments for Recent Posts */
+body.dark-mode .recent-posts {
+    background-color: #333;
+    border-color: #ff9933;
+    color: #eee;
+}
+
+body.dark-mode .recent-posts h2 {
+    color: #ffdd66;
+}
+
+body.dark-mode .recent-posts .post {
+    background-color: #444;
+    border-left-color: #ffdd66;
+}
+
+body.dark-mode .recent-posts .post h3 {
+    color: #ffdd66;
+}
+
+body.dark-mode .recent-posts .post p {
+    color: #ddd;
+}
+
+body.dark-mode .recent-posts .post .read-more {
+    color: #ffdd66;
+}
+
+body.dark-mode .recent-posts .post .read-more:hover {
+    color: #ff9933;
+}
+
+body.dark-mode .recent-posts .post a {
+    color: #ffdd66; /* Cor dos links em dark mode */
+}
+
+body.dark-mode .recent-posts .post a:hover {
+    color: #ff9933; /* Cor de destaque ao passar o mouse em dark mode */
+    text-decoration: underline;
+}
