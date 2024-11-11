@@ -7,14 +7,20 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://ivotheca.neocities.org/sobre.html</loc>
-    <lastmod>2024-11-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://ivotheca.neocities.org/contato.html</loc>
     <lastmod>2024-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://ivotheca.neocities.org/obras.html</loc>
+    <lastmod>2024-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://ivotheca.neocities.org/blog/</loc>
+    <lastmod>2024-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>

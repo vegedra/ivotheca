@@ -182,6 +182,59 @@ footer {
     margin-top: 1em;
 }
 
+/* Estilo do botão */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.back-button {
+    background-color: #333;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    padding: 0.5em;
+    font-family: "Courier New", monospace;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block; 
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+/* Centraliza o conteúdo do poema */
+.poem {
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.7; /* Altura da linha para melhor leitura */
+    margin-top: 20px; /* Margem superior */
+    text-align: center; /* Centraliza o texto */
+    width: 80%; /* Largura do poema */
+    margin-left: auto; /* Alinha à esquerda automaticamente */
+    margin-right: auto; /* Alinha à direita automaticamente */
+    padding: 0 20px; /* Adiciona um pouco de preenchimento lateral */
+}
+
+/* Centralização absoluta para garantir que a classe .poem fique no centro */
+.poem-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (opcional) */
+    min-height: 100vh; /* Garante que ocupe toda a altura da tela */
+}
+
+/* Ajusta o espaçamento entre as quebras de linha dentro do poema */
+.poem br {
+    margin-bottom: 15px;
+}
+
+
+
+
+
 
 
 

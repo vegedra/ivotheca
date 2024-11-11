@@ -3,19 +3,24 @@
    "how to change link color." */
 
 body {
+  background-color: #b7a8b2;
+  background-image: url('../images/starry.gif');
+	background-position: top;
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
   margin: 0;
 }
 
 p {
   line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
 }
-#content li {
-  line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
+
+hr {
+  border: solid #997e9c;
+  border-width: 2px 0 0 0;
 }
 
-/*This makes images shrink when their container becomes too small (responsive design)*/
 img {
   max-width: 100%;
   height: auto;
@@ -38,8 +43,8 @@ img {
 }
 @media only screen and (min-width: 600px) {
   .small {
-  max-width: 60%;
-  height: auto;
+    max-width: 60%;
+    height: auto;
   }
 }
 .caption {
@@ -49,18 +54,24 @@ img {
 }
 
 a:hover { 
-  background-color: #c9f1fe;
+  background-color: #e5ddff;
 }
 
-/*#CONTAINER is the rectangle that has contains everything but the background!*/
+h1, h2, h3, h4, h5 {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #453b63;
+}
+
+/*#CONTAINER is the rectangle that contains everything but the background!*/
 #container {
   margin: 3em auto;
   width: 90%;
 	max-width: 700px;
-  color: black; 
-  outline-color: black;
-  outline-style: solid;
-  outline-width: 1px;
+	background-color: #f2edf0;
+  color: #151515; 
+  outline-color: #a19cb1;
+  outline-style: ridge;
+  outline-width: 4px;
   outline-offset: 0;
 }
 
@@ -71,8 +82,11 @@ a:hover {
 
 /*HEADER STYLE*/
 #header {
-  background-color: black;
+  background-color: #453b63;
   padding: 0 5%;
+  border-color: #a19cb1;
+  border-style: ridge;
+  border-width: 0 0 4px 0;
 }
 #header ul {
   list-style-type: none;

@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
     if (isDarkMode) {
         document.body.classList.add('dark-mode');
-        darkModeToggle.textContent = (currentLanguage === 'en') ? "☀️ Light Mode" : "🌙 Modo Claro";
+        darkModeToggle.textContent = (currentLanguage === 'en') ? "☀️ Light Mode" : "☀️ Modo Claro";
     } else {
-        darkModeToggle.textContent = (currentLanguage === 'en') ? "🌙 Dark Mode" : "☀️ Modo Escuro";
+        darkModeToggle.textContent = (currentLanguage === 'en') ? "🌙 Dark Mode" : "🌙 Modo Escuro";
     }
 
     // Alternância do modo escuro
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Atualiza o texto do botão com base no idioma e no modo
         darkModeToggle.textContent = isDarkModeActive
-            ? (currentLanguage === 'en' ? "☀️ Light Mode" : "🌙 Modo Claro")
-            : (currentLanguage === 'en' ? "🌙 Dark Mode" : "☀️ Modo Escuro");
+            ? (currentLanguage === 'en' ? "☀️ Light Mode" :"☀ Modo Claro")
+            : (currentLanguage === 'en' ? "🌙 Dark Mode" : "🌙️ Modo Escuro");
     });
 });
