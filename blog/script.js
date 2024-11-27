@@ -31,6 +31,9 @@ let authorLink = "https://vegedra.github.io/";
 
 let postsArray = [
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
+[ "posts/25-11-2024-Tragedia.html"],
+[ "posts/19-11-2024-Procrastinar.html" ],
+[ "posts/13-11-2024-Dor.html" ],
 [ "posts/10-11-2024-Trabalhando.html" ],
 [ "posts/08-11-2024-Oi.html" ] ];
 
@@ -141,7 +144,7 @@ for ( let i = 0; i < numberOfRecentPosts; i++ ) {
   recentPostListHTML += formatPostLink(i);
 }
 if ( postsArray.length > recentPostsCutoff ) {
-  recentPostListHTML += '<li class="moreposts"><a href=' + relativePath + '/archive.html>\u00BB mais posts</a></li></ul>';
+  recentPostListHTML += '<li class="moreposts"><a href=' + relativePath + '/archive.html>\u00BB Mais posts</a></li></ul>';
 } else {
   recentPostListHTML += "</ul>";
 }
