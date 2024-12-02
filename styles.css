@@ -25,6 +25,21 @@ h2, h3 {
     margin: 0.5em 0;
 }
 
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.profile-icon {
+    width: 100px;  /* Ajuste conforme necessário */
+    height: 100px;  /* Ajuste conforme necessário */
+    border-radius: 50%;
+    border: 3px solid #f0c75e;  /* Cor da borda */
+    object-fit: cover;
+}
+
 /* Hero Section */
 .hero {
     background-color: #011f4b;
