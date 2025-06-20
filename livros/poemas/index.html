@@ -8,43 +8,85 @@
     <script defer src="../../script.js"></script>
 	<link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
 </head>
-<body>
-    <!-- Header with Dark Mode Switch -->
-    <header class="hero">
-        <marquee scrollamount="3">📚 IvoTheca - Escrita e outras coisas 📚</marquee>
-        <div class="profile-container">
-          <img src="assets/profile.jpg" alt="Linda pintura de Pierre-Auguste Renoir" class="profile-icon">
-        </div>
-        <h1>IvoTheca</h1>
-        <h3>por P.D. Ivo</h3>
-        <p class="tagline">Bem-vindo ao meu pedaço da Internet.</p>
-		
-		<!-- Navigation Links -->
-        <nav>
-            <ul class="nav-links">
-                <li><a href="../../index.html">Início</a></li>
-                <li><a href="../../obras.html">Obras</a></li>
-				        <li><a href="../../contato.html">Contato</a></li>
-				        <li><a href="../../blog/index.html">Blog</a></li>
-                <li><a href="https://vegedra.github.io/" target="blank">Site Principal</a></li>
-            </ul>
-        </nav>
-    </header>
-	
-	<!-- Google Translate -->
-	<div class="google-translate-button-container">
-    <a href="https://translate.google.com/translate?sl=pt&tl=en&u=https://ivotheca.neocities.org/livros/poemas/index.html" class="google-translate-button">Translate</a>
-  </div>
-	
-	<!-- Modo Escuro -->
-	<div class="dark-mode-button-container">
-			<button id="darkModeToggle" class="dark-mode-button">🌙 Modo Escuro</button>
-	</div>
-	
+<body class="oculto">
+    <!-- Header -->
+    <div id="header"></div>
 
     <!-- Recent Posts Section -->
     <main class="recent-posts">
         <h2>📝 Meus Poemas</h2>
+         <div class="post">
+            <h3><a href="noite.html">Memórias ao Anoitecer</a></h3>
+            <p>Tradução e adaptação de um velho poema chinês.</p>
+            <a href="noite.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="liberdade.html">Liberdade</a></h3>
+            <p>Passeio no bairro da Liberdade em SP.</p>
+            <a href="liberdade.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="comediante.html">Comediante de Tragédias</a></h3>
+            <p>Sobre a prisão do retardado do Leo Lins.</p>
+            <a href="comediante.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="mono.html">Monocromático</a></h3>
+            <p>O quão triste seria um mundo carente de diversidade.</p>
+            <a href="mono.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="exilio.html">Exílio Voluntário</a></h3>
+            <p>Quase uma cançao de revolta.</p>
+            <a href="exilio.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="cinza.html">Sob um céu cinza</a></h3>
+            <p>Escrito enquanto olhava para um céu de cor cinza.</p>
+            <a href="cinza.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="2017.html">F</a></h3>
+            <p>2017.</p>
+            <a href="2017.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="azul.html">Azul</a></h3>
+            <p>Poema sobre uma viagem de carro surreal.</p>
+            <a href="azul.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="musa.html">Minha Musa</a></h3>
+            <p>Poema que escrevi para minha amada.</p>
+            <a href="musa.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="flores.html">Ele Nunca me Deu Flores</a></h3>
+            <p>Poema que narra os pensamentos de uma mulher que se encontra em um relacionamento
+            emocionalmente distante.</p>
+            <a href="flores.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="haikus.html">Meus Haikus</a></h3>
+            <p>Haikus que escrevi — poema curto de origem japonesa, normalmente composto por três versos e 
+            com foco em capturar um momento da natureza, emoções ou uma reflexão.</p>
+            <a href="haikus.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="aguas.html">Águas de Corumbá</a></h3>
+            <p>Poema que escrevi enquanto passeava de escuna na represa de Corumbá em Caldas Novas.</p>
+            <a href="aguas.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="quero.html">Quero</a></h3>
+            <p>Escutar o que quer e o que não quer.</p>
+            <a href="quero.html" class="read-more">Ler Mais 📖</a>
+        </div>
+        <div class="post">
+            <h3><a href="sorriso.html">Sorriso Melancólico</a></h3>
+            <p>Uma despedida agridoce e sentimentos conflitantes.</p>
+            <a href="sorriso.html" class="read-more">Ler Mais 📖</a>
+        </div>
         <div class="post">
             <h3><a href="momentos.html">Momentos Intermédios</a></h3>
             <p>Poema sobre os momentos transitórios na vida que nunca nos lembramos.</p>
@@ -69,10 +111,6 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Pedro Ivo Rocha. Todos os direitos reservados.</p>
-        <p>É proibido copiar, exibir, distribuir, executar, criar obras derivadas ou</p>
-        <p>fazer uso comercial das obras presentes neste site sem a devida permissão do autor.</p>
-    </footer>
+    <div id="footer"></div>
 </body>
 </html>

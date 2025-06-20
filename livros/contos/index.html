@@ -8,61 +8,27 @@
     <script defer src="../../script.js"></script>
 	<link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
 </head>
-<body>
-    <!-- Header with Dark Mode Switch -->
-    <header class="hero">
-        <marquee scrollamount="3">📚 IvoTheca - Escrita e outras coisas 📚</marquee>
-        <div class="profile-container">
-          <img src="assets/profile.jpg" alt="Linda pintura de Pierre-Auguste Renoir" class="profile-icon">
-        </div>
-        <h1>IvoTheca</h1>
-        <h3>por P.D. Ivo</h3>
-        <p class="tagline">Bem-vindo ao meu pedaço da Internet.</p>
-		
-		<!-- Navigation Links -->
-        <nav>
-            <ul class="nav-links">
-                <li><a href="../../index.html">Início</a></li>
-                <li><a href="../../obras.html">Obras</a></li>
-				        <li><a href="../../contato.html">Contato</a></li>
-				        <li><a href="../../blog/index.html">Blog</a></li>
-                <li><a href="https://vegedra.github.io/" target="blank">Site Principal</a></li>
-            </ul>
-        </nav>
-    </header>
-	
-	<!-- Google Translate -->
-	<div class="google-translate-button-container">
-    <a href="https://translate.google.com/translate?sl=pt&tl=en&u=https://ivotheca.neocities.org/livros/poemas/index.html" class="google-translate-button">Translate</a>
-  </div>
-	
-	<!-- Modo Escuro -->
-	<div class="dark-mode-button-container">
-			<button id="darkModeToggle" class="dark-mode-button">🌙 Modo Escuro</button>
-	</div>
-	
+<body class="oculto">
+    <!-- Header -->
+    <div id="header"></div>
 
     <!-- Recent Posts Section -->
     <main class="recent-posts">
         <h2>📝 Meus Contos</h2>
+         <div class="post">
+            <h3><a href="terra.html">A Terra que Mana Leite e Mel..., </a></h3>
+            <p>Um diálogo entre verbos e nomes.</p>
+            <a href="terra.html" class="read-more">Ler Mais 📖</a>
+        </div>
         <div class="post">
-            <h3><a href="caminhar.html">Caminhar Eterno Rumo ao Nada</a></h3>
-            <p>Em uma cidade misteriosa chamada Villa Epecuén, um homem sem memória caminha, guiado por um impulso misterioso. 
-            Ele não sabe seu nome, não lembra de onde veio nem o que procura, mas em cada passo cruza o caminho de 
-            estranhos perdidos, carregados de problemas e dores. Com uma ingenuidade quase infantil, ele oferece 
-            ajuda. Enxergando as dificuldades dos outros com uma perspectiva única, a cada encontro sua ajuda é o que salva
-            tais pessoas. Mas então, no final, quem é que o salvará?
-            Ainda em desenvolvimento.</p>
-            <a href="caminhar.html" class="read-more">Ler Mais 📖</a>
+            <h3><a href="espera.html">Espera (ou a terrivelmente irritante mosca.)</a></h3>
+            <p>Uma breve história sobre um rapaz em seu primeiro encontro, aguardando ansiosamente por seu par. Para seu azar, um terrível e inesperado vilão surge para infernizar sua vida: uma mosca.</p>
+            <a href="espera.html" class="read-more">Ler Mais 📖</a>
         </div>
         <!-- Só copiar o div post pra botar mais coisa -->
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Pedro Ivo Rocha. Todos os direitos reservados.</p>
-        <p>É proibido copiar, exibir, distribuir, executar, criar obras derivadas ou</p>
-        <p>fazer uso comercial das obras presentes neste site sem a devida permissão do autor.</p>
-    </footer>
+    <div id="footer"></div>
 </body>
 </html>

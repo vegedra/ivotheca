@@ -31,6 +31,17 @@ let authorLink = "https://vegedra.github.io/";
 
 let postsArray = [
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
+[ "posts/08-06-2025-Sozinho.html"],
+[ "posts/28-05-2025-Raiva.html"],
+[ "posts/14-05-2025-20-Anos.html"],
+[ "posts/17-04-2025-Complicado.html"],
+[ "posts/01-04-2025-Novo-Projeto.html"],
+[ "posts/12-03-2025-Voltei.html"],
+[ "posts/29-01-2025-Finalmente.html"],
+[ "posts/17-01-2025-Lynch.html"],
+[ "posts/15-01-2025-Quase-La.html"],
+[ "posts/02-01-2025-Novo-Ano.html"],
+[ "posts/10-12-2024-Escrita.html"],
 [ "posts/25-11-2024-Tragedia.html"],
 [ "posts/19-11-2024-Procrastinar.html" ],
 [ "posts/13-11-2024-Dor.html" ],

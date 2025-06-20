@@ -13,70 +13,48 @@
     <script defer src="script.js"></script>
 	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
-<body>
-    <!-- Header with Dark Mode Switch -->
-    <header class="hero">
-        <marquee scrollamount="3">📚 IvoTheca - Escrita e outras coisas 📚</marquee>
-        
-        <div class="profile-container">
-          <img src="assets/profile.jpg" alt="Linda pintura de Pierre-Auguste Renoir" class="profile-icon">
-        </div>
-        
-        <h1>IvoTheca</h1>
-        <h3>por P.D. Ivo</h3>
-        <p class="tagline">Bem-vindo ao meu pedaço da Internet.</p>
-		
-		<!-- Navigation Links -->
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="obras.html">Obras</a></li>
-				        <li><a href="contato.html">Contato</a></li>
-				        <li><a href="blog/index.html">Blog</a></li>
-				        <li><a href="https://vegedra.github.io/" target="_blank">Site Principal</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="oculto">
+    <!-- Header -->
+    <div id="header"></div>
 	
-	<!-- Google Translate -->
-	<div class="google-translate-button-container">
-    <a href="https://translate.google.com/translate?sl=pt&tl=en&u=https://ivotheca.neocities.org/" class="google-translate-button">Translate</a>
-  </div>
-
-	
-	<!-- Modo Escuro -->
-	<div class="dark-mode-button-container">
-			<button id="darkModeToggle" class="dark-mode-button">🌙 Modo Escuro</button>
+	<!-- Widget -->
+	<div class="widget-iframe-container">
+	  <iframe 
+		src="widget.html" 
+		title="Widget do Livro"
+		scrolling="no"
+		onload="this.style.height = (this.contentWindow.document.body.scrollHeight + 20) + 'px';"
+	  ></iframe>
 	</div>
 	
 	<!-- Sobre mim -->
 	<main class="post-content">
         <h2>Onde estou?</h2>
         <hr>
-        <p>Aqui é onde publicarei os textos que escrevo, sejam eles pequenas histórias, livros, 
-			novels, etc. Sinta-se a vontade para lê-los.</p>
+        <p>Aqui é onde publicarei os textos que escrevo, sejam eles poemas, pequenas histórias, romances, 
+			etc. Sinta-se a vontade para lê-los.</p>
         <hr>
 		<h2>Quem sou eu?</h2>
-		<p>Me chamo Pedro Ivo e gosto de escrever histórias desde criança. Tentei aprender a desenhar 
-			por um bom tempo, mas percebi que no lugar de linhas e rabiscos, me saio melhor com palavras. 
-			Ok, isso foi um pouco dramático. Não é pra tanto…</p>
+		<p>Eu me chamo Pedro Ivo e gosto de escrever histórias desde criança. Tentei aprender a desenhar 
+			por um bom tempo, mas, percebi que no lugar de linhas e rabiscos, me saio melhor com palavras. 
+			Ok, isso foi um pouco dramático... Não é pra tanto.</p>
     </main>
 
-    <!-- Links Section -->
+    <!-- Links -->
     <section class="links">
         <h2>Leia minhas obras em</h2>
         <ul>
-            <li><a href="https://www.wattpad.com/user/RealPedroIvo" target="_blank">Wattpad</a></li>
+            <li><a href="https://amazon.com/author/pd-ivo" target="_blank">Amazon</a></li>
+            <li><a href="https://pdivo.substack.com" target="_blank">Substack</a></li>
+            <li><a href="https://www.wattpad.com/user/pd-ivo" target="_blank">Wattpad</a></li>
             <li><a href="https://www.recantodasletras.com.br/autor.php?id=244345" target="_blank">Recanto das Letras</a></li>
-            <li><a href="https://www.royalroad.com/profile/586421" target="_blank">Royal Road</a></li>
-            <li><a href="https://www.fictionpress.com/~pdivo" target="_blank">Fiction Press</a></li>
+            <li><a href="https://getinkspired.com/pt/u/pd-ivo/" target="_blank">Inkspired</a></li>
+            <li><a href="https://www.skoob.com.br/autor/81151" target="_blank">Skoob</a></li>
+            <li><a href="https://www.youtube.com/@vegedra" target="_blank">Youtube</a></li>
         </ul>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Pedro Ivo Rocha. Todos os direitos reservados.</p>
-        <p>É proibido copiar, exibir, distribuir, executar, criar obras derivadas ou</p>
-        <p>fazer uso comercial das obras presentes neste site sem a devida permissão do autor.</p>
-    </footer>
+    <div id="footer"></div>
+    <!-- Olá, pessoa curiosa :) -->
 </body>
 </html>

@@ -11,6 +11,23 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+body.oculto {
+  visibility: hidden;
+  opacity: 0;
+}
+
+iframe {
+  border: none;
+  width: 400px;
+  height: auto;
+  min-height: 300px;
+  margin: 20px auto;
+  display: block;
+  overflow: visible;
 }
 
 h1 {
@@ -104,13 +121,32 @@ marquee {
 
 .links ul {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
     justify-content: center;
-    gap: 2em;
+    gap: 1em; /* Espaçamento entre os itens */
     padding: 0;
 }
 
 .links ul li {
     list-style: none;
+    flex: 1 1 150px; /* Flex-grow, flex-shrink, flex-basis */
+    text-align: center;
+    margin: 0.5em 0; /* Espaçamento vertical entre os itens */
+}
+
+.links ul li a {
+    display: block;
+    padding: 0.5em 1em;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.links ul li a:hover {
+    background-color: #ffcc00;
+    color: #003366;
 }
 
 /* Post Content */
@@ -250,6 +286,14 @@ footer {
     margin-bottom: 15px;
 }
 
+/* Para prosa */
+.story-text p {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.7;
+    margin-bottom: 1em;
+    font-size: 1.05em;
+}
 
 
 
@@ -335,6 +379,8 @@ body.dark-mode .nav-links a:hover {
 
 body.dark-mode .links a {
     color: #ff9933; /* Light yellow or any color that fits dark mode */
+    background-color: #333;
+    border: 1px solid #ffcc00;
 }
 
 body.dark-mode .links a:hover {
@@ -382,4 +428,31 @@ body.dark-mode .recent-posts .post a {
 body.dark-mode .recent-posts .post a:hover {
     color: #ff9933; /* Cor de destaque ao passar o mouse em dark mode */
     text-decoration: underline;
+}
+
+/* Ajustes para telas menores (mobile) */
+@media (max-width: 600px) {
+    .links ul {
+        flex-direction: column; /* Coloca os itens em uma coluna */
+        gap: 0.5em; /* Reduz o espaçamento entre os itens */
+    }
+
+    .links ul li {
+        flex: 1 1 auto; /* Ajusta o flex para ocupar o espaço necessário */
+    }
+}
+
+/* Widget Styles */
+.widget-iframe-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.widget-iframe-container iframe {
+  border: none;
+  width: 400px;
+  height: 340px; /* Altura inicial */
+  overflow: hidden;
+  display: block;
 }
