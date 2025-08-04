@@ -261,16 +261,21 @@ footer {
     background-color: #45a049; /* Cor ao passar o mouse */
 }
 
-/* Centraliza o conteúdo do poema */
+/* Conteúdo de poema */
 .poem {
-    font-size: 18px; /* Tamanho da fonte */
-    line-height: 1.7; /* Altura da linha para melhor leitura */
-    margin-top: 20px; /* Margem superior */
-    text-align: center; /* Centraliza o texto */
-    width: 80%; /* Largura do poema */
-    margin-left: auto; /* Alinha à esquerda automaticamente */
-    margin-right: auto; /* Alinha à direita automaticamente */
-    padding: 0 20px; /* Adiciona um pouco de preenchimento lateral */
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    white-space: pre-wrap; /* Mantém a formatação de linha */
+    text-align: left; /* Mais natural para leitura */
+    margin: 2em auto;
+    max-width: 600px;
+    padding: 1em;
+    background-color: #fdfcf9;
+    border-left: 4px solid #ccc;
+    border-radius: 5px;
+    font-style: italic;
+    color: #0f0f00;
 }
 
 /* Centralização absoluta para garantir que a classe .poem fique no centro */
@@ -287,12 +292,26 @@ footer {
 }
 
 /* Para prosa */
+.story-text {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #1a1a1a;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 1em 1.5em;
+    background-color: #fdfcf9;
+    border-left: 4px solid #ccc;
+    border-radius: 5px;
+    white-space: normal;
+}
+
 .story-text p {
-    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 0.4em; /* aqui você controla o espaço */
     text-indent: 2em;
-    line-height: 1.7;
-    margin-bottom: 1em;
-    font-size: 1.05em;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 
